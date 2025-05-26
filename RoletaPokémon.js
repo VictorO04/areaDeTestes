@@ -459,10 +459,12 @@ switch (pokemonName) {
         pokemonName = "Pokémon não encontrado)";
     }
 
-let escolhaUsuario = readline.question(`O pokemon sorteado foi ${pokemonName}, deseja escolhe-lo? sim ou nao`);
+let escolhaUsuario = readline.question(`O pokemon sorteado foi ${pokemonName}, deseja escolhe-lo? sim ou nao: `);
+let pokemonEscolhido = pokemonName;
+const escolhido = pokemonEscolhido
 
 if (escolhaUsuario === "sim") {
-    console.log("boaaaaa")
+    console.log("Agora você é um treinador pokemon, com seu ", escolhido);
 } else {
-    console.log("Reinicie o programa")
+    console.log("Reinicie o programa");
 }
